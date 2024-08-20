@@ -1,6 +1,19 @@
 {
   "name": "@learn_vue3/shared",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "description": "第一次发布，公用方法组件",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:chenjieya/monorepo_vue3.git"
+  },
+  "keywords": [
+    "utils"
+  ],
+  "author": "alvis",
+  "license": "MIN",
+  "bugs": {
+    "url": "https://github.com/chenjieya/monorepo_vue3/issues"
+  },
   "scripts": {
     "build": "vite build"
   },

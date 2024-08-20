@@ -1,20 +1,19 @@
 {
   "name": "@learn_vue3/components",
-  "version": "0.0.0",
-  "private": false,
+  "version": "0.0.1",
   "description": "第一次发布，vue组件",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/learn-vue3/learn-vue3.git"
+    "url": "git@github.com:chenjieya/monorepo_vue3.git"
   },
   "keywords": [
     "vue3",
     "components"
   ],
   "author": "alvis",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/learn-vue3/learn-vue3/issues"
+    "url": "https://github.com/chenjieya/monorepo_vue3/issues"
   },
   "scripts": {
     "build": "vite build"
@@ -33,5 +32,9 @@
       "module": "./dist/learn_vue3-components.mjs",
       "types": "./dist/types/index.d.ts"
     }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
