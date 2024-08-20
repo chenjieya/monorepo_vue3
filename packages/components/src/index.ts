@@ -1,5 +1,4 @@
-import ShoppingCar from './ShoppingCar/index.vue'
+import ShoppingCar from './shopCar/index.vue'
+import TestButton from './testButton/index.vue'
 
-export {
-    ShoppingCar
-}
+export { ShoppingCar, TestButton }

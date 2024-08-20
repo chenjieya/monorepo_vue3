@@ -72,52 +72,52 @@ const totalPrice = computed(() => {
 </script>
 
 <template>
-    <div id="shoppingcart">
-      <table>
-        <!-- 表头 -->
-        <tr>
-          <td>
-            <input type="checkbox" v-model="isSelectAll" />
-            全选
-          </td>
-          <td>商品</td>
-          <td>单价（元）</td>
-          <td>数量</td>
-          <td>小记（元）</td>
-          <td>操作</td>
-        </tr>
-
-        <tr v-for="item in goods" :key="item.id">
-          <td><input type="checkbox" v-model="item.checked" /></td>
-          <td>{{ item.goods_name }}</td>
-          <td>{{ item.goods_price }}</td>
-          <td>
-            <button @click="item.goods_num > 0 ? item.goods_num-- : ''">-</button>
-            <input type="text" v-model="item.goods_num" class="ipt" />
-            <button @click="item.goods_num++">+</button>
-          </td>
-          <td>{{ item.goods_num * item.goods_price }}</td>
-          <td>
-            <button class="danger" @click="deleteItem(item.id)">删除</button>
-          </td>
-        </tr>
-      </table>
-
-      <footer class="footer">
-        <div class="footer-left">
+  <div id="shoppingcart">
+    <table>
+      <!-- 表头 -->
+      <tr>
+        <td>
           <input type="checkbox" v-model="isSelectAll" />
-          <span>全选</span>
-          <a @click="deleteSelectItem">删除选中的商品</a>
-          <span>共{{ goods.length }}件商品，已选择{{ selectNum }}件</span>
+          全选
+        </td>
+        <td>商品</td>
+        <td>单价（元）</td>
+        <td>数量</td>
+        <td>小记（元）</td>
+        <td>操作</td>
+      </tr>
+
+      <tr v-for="item in goods" :key="item.id">
+        <td><input type="checkbox" v-model="item.checked" /></td>
+        <td>{{ item.goods_name }}</td>
+        <td>{{ item.goods_price }}</td>
+        <td>
+          <button @click="item.goods_num > 0 ? item.goods_num-- : ''">-</button>
+          <input type="text" v-model="item.goods_num" class="ipt" />
+          <button @click="item.goods_num++">+</button>
+        </td>
+        <td>{{ item.goods_num * item.goods_price }}</td>
+        <td>
+          <button class="danger" @click="deleteItem(item.id)">删除</button>
+        </td>
+      </tr>
+    </table>
+
+    <footer class="footer">
+      <div class="footer-left">
+        <input type="checkbox" v-model="isSelectAll" />
+        <span>全选</span>
+        <a @click="deleteSelectItem">删除选中的商品</a>
+        <span>共{{ goods.length }}件商品，已选择{{ selectNum }}件</span>
+      </div>
+      <div class="footer-right">
+        <div>
+          合计(不含运费): <span>¥ {{ totalPrice }}</span>
         </div>
-        <div class="footer-right">
-          <div>
-            合计(不含运费): <span>¥ {{ totalPrice }}</span>
-          </div>
-          <button>去结算</button>
-        </div>
-      </footer>
-    </div>
+        <button>去结算</button>
+      </div>
+    </footer>
+  </div>
 </template>
 
 <style scoped src="./shopping-cart.css"></style>

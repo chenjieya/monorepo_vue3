@@ -1,3 +1,37 @@
 {
-  "name": "@learn_vue3/components"
+  "name": "@learn_vue3/components",
+  "version": "0.0.0",
+  "private": false,
+  "description": "第一次发布，vue组件",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/learn-vue3/learn-vue3.git"
+  },
+  "keywords": [
+    "vue3",
+    "components"
+  ],
+  "author": "alvis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/learn-vue3/learn-vue3/issues"
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "peerDependencies": {
+    "vue": ">=3.4.0"
+  },
+  "dependencies": {
+    "@learn_vue3/shared": "workspace:^"
+  },
+  "main": "./dist/learn_vue3-components.umd.js",
+  "module": "./dist/learn_vue3-components.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/learn_vue3-components.umd.js",
+      "module": "./dist/learn_vue3-components.mjs",
+      "types": "./dist/types/index.d.ts"
+    }
+  }
 }

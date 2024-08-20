@@ -4,6 +4,6 @@ import { ShoppingCar } from '@learn_vue3/components'
 
 <template>
   <div id="app">
-    <ShoppingCar/>
+    <ShoppingCar />
   </div>
 </template>

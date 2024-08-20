@@ -1,3 +1,20 @@
 {
-  "name": "@learn_vue3/shared"
+  "name": "@learn_vue3/shared",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.17.7",
+    "lodash": "^4.17.21"
+  },
+  "main": "./dist/learn_vue3-shared.umd.js",
+  "module": "./dist/learn_vue3-shared.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/learn_vue3-shared.umd.js",
+      "module": "./dist/learn_vue3-shared.mjs",
+      "types": "./dist/types/index.d.ts"
+    }
+  }
 }
