@@ -1,0 +1,17 @@
+{
+  "name": "@learn_vue3/types",
+  "version": "0.0.1",
+  "author": "alvis",
+  "license": "MIN",
+  "dependencies": {
+  },
+  "main": "./dist/learn_vue3-types.umd.js",
+  "module": "./dist/learn_vue3-types.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/learn_vue3-types.umd.js",
+      "module": "./dist/learn_vue3-types.mjs",
+      "types": "./dist/types/index.d.ts"
+    }
+  }
+}
