@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ShoppingCar } from '@learn_vue3/components'
+import { ShoppingCar } from '@learn_vue3/commonComponents'
 </script>
 
 <template>

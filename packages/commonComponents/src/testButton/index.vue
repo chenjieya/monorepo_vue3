@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // 框架
-import { hello, useLodash } from '@learn_vue3/shared'
+import { hello, useLodash } from '@learn_vue3/commonShared'
 // 组件
 // 方法/类型
 
