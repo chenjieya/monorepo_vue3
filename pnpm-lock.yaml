@@ -72,17 +72,6 @@ importers:
 
   docs: {}
 
-  packages/01_购物车:
-    dependencies:
-      '@learn_vue3/components':
-        specifier: workspace:^
-        version: link:../components
-      vue:
-        specifier: '>=3.4.0'
-        version: 3.4.38(typescript@5.4.5)
-
-  packages/02_test: {}
-
   packages/carShop:
     dependencies:
       '@learn_vue3/components':
@@ -110,7 +99,14 @@ importers:
         specifier: ^4.17.21
         version: 4.17.21
 
-  packages/testProject: {}
+  packages/testProject:
+    dependencies:
+      '@learn_vue3/components':
+        specifier: workspace:^
+        version: link:../components
+      vue:
+        specifier: '>=3.4.0'
+        version: 3.4.38(typescript@5.4.5)
 
 packages:
 

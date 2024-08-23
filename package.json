@@ -7,6 +7,8 @@
     "build:all": "pnpm --filter ./packages/** run build",
     "dev:carshop": "pnpm --filter @learn_vue3/car_shop run dev",
     "build:carshop": "pnpm --filter @learn_vue3/car_shop run build-only",
+    "dev:testproject": "pnpm --filter @learn_vue3/test-project run dev",
+    "build:testproject": "pnpm --filter @learn_vue3/test-project run build-only",
     "build:components": "pnpm run ts:build && pnpm --filter @learn_vue3/components run build && pnpm run mv:type",
     "build:shared": "pnpm run ts:build && pnpm --filter @learn_vue3/shared run build && pnpm run mv:type",
     "clean:type": "rimraf ./dist",
