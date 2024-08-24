@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { TestButton } from '@learn_vue3/components'
+import { TestButton } from '@learn_vue3/commonComponents'
 </script>
 
 <template>
