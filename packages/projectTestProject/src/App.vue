@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { h } from 'vue'
 import { VNode } from '@learn_vue3/commonComponents'
+import { UserCardByVnode } from '@learn_vue3/commonComponents'
 
 const v = h(VNode, {
   name: '李四',
@@ -14,8 +15,11 @@ console.log('vnode:', v)
   <div class="app-container">
     <h1>这是App组件</h1>
     <VNode name="张三" email="188@163.com" />
-    <!-- 渲染vnode -->
+    <!-- 渲染vnode,通过component使用虚拟dom -->
     <component :is="v" />
+
+    <!-- 使用js写组件 -->
+    <UserCardByVnode name="chenjie" email="188@163.com" avatar-url="https://img1.baidu.com/it/u=1333417867,4012964063&fm=253&app=120&size=w931&n=0&f=JPEG&fmt=auto?sec=1714410000&t=91fec948b29aa1f04cd55cb867ccb757"/>
   </div>
 </template>
 

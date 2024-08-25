@@ -1,8 +1,0 @@
-{
-  "extends": "../../tsconfig.json",
-  "compilerOptions": {
-    "declaration": true,
-    "emitDeclarationOnly": true, // 只输出声明文件(ts 产物)
-    "declarationDir": "./dist" // 声明文件生成的目录
-  }
-}
