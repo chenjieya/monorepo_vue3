@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { h } from 'vue'
-import { VNode } from '@learn_vue3/commonComponents'
-import { UserCardByVnode } from '@learn_vue3/commonComponents'
+import { VNode, UserCardByVnode, Message } from '@learn_vue3/commonComponents'
 
 const v = h(VNode, {
   name: '李四',
@@ -9,6 +8,19 @@ const v = h(VNode, {
 })
 console.log('vnode:', v)
 
+setTimeout(() => {
+  Message({
+    type: 'suc',
+    message: '成功啦，还有谁'
+  })
+}, 3000);
+
+setTimeout(() => {
+  Message({
+    type: 'suc',
+    message: '成功啦，还有谁'
+  })
+}, 5000);
 </script>
 
 <template>
@@ -19,7 +31,11 @@ console.log('vnode:', v)
     <component :is="v" />
 
     <!-- 使用js写组件 -->
-    <UserCardByVnode name="chenjie" email="188@163.com" avatar-url="https://img1.baidu.com/it/u=1333417867,4012964063&fm=253&app=120&size=w931&n=0&f=JPEG&fmt=auto?sec=1714410000&t=91fec948b29aa1f04cd55cb867ccb757"/>
+    <UserCardByVnode
+      name="chenjie"
+      email="188@163.com"
+      avatar-url="https://img1.baidu.com/it/u=1333417867,4012964063&fm=253&app=120&size=w931&n=0&f=JPEG&fmt=auto?sec=1714410000&t=91fec948b29aa1f04cd55cb867ccb757"
+    />
   </div>
 </template>
 
