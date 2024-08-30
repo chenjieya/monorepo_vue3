@@ -12,8 +12,12 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
   },
-  "dependencies": {},
   "peerDependencies": {
     "vue": ">=3.4.0"
+  },
+  "devDependencies": {
+    "@learn_vue3/shared": "workspace:^",
+    "terser": "^5.31.6",
+    "vite-plugin-inspect": "^0.8.7"
   }
 }

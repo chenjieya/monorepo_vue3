@@ -10,6 +10,7 @@
     // baseUrl 改变了，基础配置中的 paths 也需要一并重写
     "paths": {
       "@/*": ["src/*"],
+      "@learn_vue3/*": ["../../packages/*/src"]
     }
   },
   "include": [
