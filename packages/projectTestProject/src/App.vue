@@ -18,9 +18,9 @@ setTimeout(() => {
 setTimeout(() => {
   Message({
     type: 'suc',
-    message: '成功啦，还有谁'
+    message: '成功啦, 还有谁xxxx'
   })
-}, 5000);
+}, 4000);
 </script>
 
 <template>
