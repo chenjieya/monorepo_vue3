@@ -28,7 +28,8 @@ setTimeout(() => {
     <h1>这是App组件</h1>
     <VNode name="张三" email="188@163.com" />
     <!-- 渲染vnode,通过component使用虚拟dom -->
-    <component :is="v" />
+    <!-- <component :is="v" /> -->
+     <v/>
 
     <!-- 使用js写组件 -->
     <UserCardByVnode
