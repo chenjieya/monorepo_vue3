@@ -3,10 +3,11 @@
 import { computed }from 'vue'
 // 组件
 // 方法/类型
+import type { ToolTipType } from './types'
 
 const props = defineProps<{
   message: string,
-  type: string,
+  type: ToolTipType,
   flag: boolean
 }>()
 

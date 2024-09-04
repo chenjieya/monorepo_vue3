@@ -2,14 +2,16 @@ import { defineComponent, createApp, h, Teleport, ref } from 'vue'
 import type { App } from 'vue'
 import toast from './index.vue';
 
+import type { ToolTipType } from './types'
+
 /**
  * 继承父组件
- * @param {Object} param 消息框信息 param1 消息框类型 suc err warn
+ * @param {Object} param0 消息框信息 param1 消息框类型 suc err warn
  * @param {*} duration 间隔时间
  */
 let app: App | null
 let unTimer: ReturnType<typeof setTimeout>
-export default function ({ message, type }: {message: string, type: string}, duration: number = 3000) {
+export default function ({ message, type }: {message: string, type: ToolTipType}, duration: number = 3000) {
 
   // 控制消息提示框的显示隐藏
   const flag = ref(true);
@@ -22,11 +24,11 @@ export default function ({ message, type }: {message: string, type: string}, dur
 
   app = createApp(defineComponent({
     setup() {
-      return () => h(Teleport, {to: 'body'}, h(toast, { 
+      return () => h(Teleport, {to: 'body'}, h(toast, {
         message,
         type,
         flag: flag.value
-       }))
+      }))
     }
   }));
 

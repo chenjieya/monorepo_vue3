@@ -1,0 +1,1 @@
+ export type ToolTipType = "suc" | "err" | "warn"
