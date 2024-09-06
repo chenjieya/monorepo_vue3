@@ -1,6 +1,12 @@
 <script setup lang="ts">
 import { h } from 'vue'
-import { VNode, UserCardByVnode, Message, TestButton, useFuncButton } from '@learn_vue3/commonComponents'
+import {
+  VNode,
+  UserCardByVnode,
+  Message,
+  TestButton,
+  useFuncButton
+} from '@learn_vue3/commonComponents'
 
 const v = h(VNode, {
   name: '李四',
@@ -13,15 +19,14 @@ setTimeout(() => {
     type: 'suc',
     message: '成功啦，还有谁'
   })
-}, 3000);
+}, 3000)
 
 setTimeout(() => {
   Message({
     type: 'suc',
     message: '成功啦, 还有谁xxxx'
   })
-}, 4000);
-
+}, 4000)
 
 const [TextComp, ButtonComp] = useFuncButton()
 </script>
@@ -32,7 +37,7 @@ const [TextComp, ButtonComp] = useFuncButton()
     <VNode name="张三" email="188@163.com" />
     <!-- 渲染vnode,通过component使用虚拟dom -->
     <!-- <component :is="v" /> -->
-     <v/>
+    <v />
 
     <!-- 使用js写组件 -->
     <UserCardByVnode
@@ -47,7 +52,7 @@ const [TextComp, ButtonComp] = useFuncButton()
     </TestButton>
 
     <!-- 测试函数式组件 -->
-    <TextComp ></TextComp>
+    <TextComp></TextComp>
     <ButtonComp test-name="陈姐">+1</ButtonComp>
   </div>
 </template>
