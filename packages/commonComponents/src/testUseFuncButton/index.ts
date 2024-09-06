@@ -22,7 +22,7 @@ export const useFuncButton = () => {
         return h('div', {style: {"font-weight": "bold"} }, count.value)
     }
 
-    const ButtonComp: FunctionalComponent<FComponentProps, Events> = (props, { emit, slots }) => {
+    const ButtonComp: FunctionalComponent<FComponentProps, Events> = (_props, { emit, slots }) => {
         return h("div", null, h("button", {
                 onClick: () => {updateCount(); emit('sendMessage', count.value)}
             }, slots.default?.())
