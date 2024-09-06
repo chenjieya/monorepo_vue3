@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { h } from 'vue'
-import { VNode, UserCardByVnode, Message } from '@learn_vue3/commonComponents'
+import { VNode, UserCardByVnode, Message, TestButton } from '@learn_vue3/commonComponents'
 
 const v = h(VNode, {
   name: '李四',
@@ -37,6 +37,11 @@ setTimeout(() => {
       email="188@163.com"
       avatar-url="https://img1.baidu.com/it/u=1333417867,4012964063&fm=253&app=120&size=w931&n=0&f=JPEG&fmt=auto?sec=1714410000&t=91fec948b29aa1f04cd55cb867ccb757"
     />
+
+    <!-- 测试按钮 -->
+    <TestButton>
+      <div>chenjie</div>
+    </TestButton>
   </div>
 </template>
 

@@ -14,14 +14,14 @@ const props = defineProps<{
 const iconType = computed(() => {
   if (props.type === "suc") {
     return "icon-chenggong";
-  }
-  if (props.type === "err") {
+  } else if(props.type === "err") {
     return "icon-shibai";
-  }
-  if (props.type === "warn") {
+  } else if(props.type === "warn") {
     return "icon-jinggao";
+  } else {
+    const _neverCheck:never = props.type
+    throw new Error(`不知道的类型: ${_neverCheck}`);
   }
-  return "icon-chenggong";
 })
 
 const animate = computed(() => {
