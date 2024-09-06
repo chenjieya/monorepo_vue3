@@ -8,5 +8,7 @@ import VNode from './testVNode/index.vue'
 import UserCardByVnode from './testUserCardByVnode/userCard'
 // 消息提示组件
 import Message from './toolTip/tooltip'
+// 测试函数组件
+import { useFuncButton } from './testUseFuncButton/index'
 
-export { ShoppingCar, TestButton, VNode, UserCardByVnode, Message }
+export { ShoppingCar, TestButton, VNode, UserCardByVnode, Message, useFuncButton }

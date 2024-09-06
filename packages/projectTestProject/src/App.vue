@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { h } from 'vue'
-import { VNode, UserCardByVnode, Message, TestButton } from '@learn_vue3/commonComponents'
+import { VNode, UserCardByVnode, Message, TestButton, useFuncButton } from '@learn_vue3/commonComponents'
 
 const v = h(VNode, {
   name: '李四',
@@ -21,6 +21,9 @@ setTimeout(() => {
     message: '成功啦, 还有谁xxxx'
   })
 }, 4000);
+
+
+const [TextComp, ButtonComp] = useFuncButton()
 </script>
 
 <template>
@@ -42,6 +45,10 @@ setTimeout(() => {
     <TestButton>
       <div>chenjie</div>
     </TestButton>
+
+    <!-- 测试函数式组件 -->
+    <TextComp ></TextComp>
+    <ButtonComp test-name="陈姐">+1</ButtonComp>
   </div>
 </template>
 
