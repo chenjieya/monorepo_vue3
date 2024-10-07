@@ -8,6 +8,8 @@ import {
   useFuncButton
 } from '@learn_vue3/commonComponents'
 
+import testElInput from './components/byElInput/testElInput.vue'
+
 const v = h(VNode, {
   name: '李四',
   email: '176@163.com'
@@ -54,6 +56,9 @@ const [TextComp, ButtonComp] = useFuncButton()
     <!-- 测试函数式组件 -->
     <TextComp></TextComp>
     <ButtonComp test-name="陈姐">+1</ButtonComp>
+
+    <!-- 测试二次封装组件抛出内部方法 -->
+    <test-el-input />
   </div>
 </template>
 

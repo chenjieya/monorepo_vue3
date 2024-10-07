@@ -13,7 +13,8 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@learn_vue3/components": "workspace:^"
+    "@learn_vue3/components": "workspace:^",
+    "element-plus": "^2.8.4"
   },
   "peerDependencies": {
     "vue": ">=3.4.0"
